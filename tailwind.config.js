@@ -3,7 +3,8 @@ module.exports = {
   content: ["./*/*.html"],
   theme: {
     fontFamily:{
-      noto:"Noto Sans, sans-serif"
+      noto:"Noto Sans, sans-serif",
+      RobotoMono:"Roboto Mono, monospace"
     },
     screens:{
       xs:"300px",
@@ -14,7 +15,10 @@ module.exports = {
     },
     extend: {
       colors:{
-        "softBlack":"#151515"
+        "softBlack":"#151515",
+        "lightBlack":"#202225",
+        "darkYellow":"#E9BF39",
+        "gold":"#f1d046"
       }
     },
   },

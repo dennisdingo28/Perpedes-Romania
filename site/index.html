@@ -11,19 +11,26 @@
 </head>
 <body class="bg-softBlack">
 
-    <div class="navbar">
-        <div class="container mx-auto flex justify-between items-center">
+    <div class="navbar bg-lightBlack">
+        <div class="container mx-auto flex items-center justify-between">
             <div class="logo">
-                <img src="../img/logo.png" class="w-[80px] h-[80px] object-cover cursor-pointer" alt="">
+                <a href="index.html"><img src="../img/logo.png" class="w-[60px] object-cover md:w-[80px]" alt=""></a>
             </div>
-            <div class="menu flex items-center space-x-20 text-white font-noto">
-                <a href="#" class="tracking-widest">Home</a>
-                <a href="#">About</a>
-                <a href="#">Founders</a>
-                <a href="#">Partners</a>
+            <div class="md:hidden lg:block font-RobotoMono lg:text-lg text-md"><span class="text-white">Bun venit </span><span class="text-gold">in comunitate !</span></div>
+            <div class="links pr-4 hidden text-white md:flex md:space-x-12 md:items-center">
+                <a href="#" class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Home</a>
+                <a href="#" class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">About</a>
+                <a href="#" class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Founders</a>
+                <a href="#" class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Partners</a>
+            </div>
+            <div class="menu pr-4 flex flex-col gap-1 cursor-pointer md:hidden">
+                <div class="line1 w-[20px] h-[3.3px] bg-white"></div>
+                <div class="line2 w-[20px] h-[3.3px] bg-white"></div>
+                <div class="line3 w-[20px] h-[3.3px]  bg-white"></div>
             </div>
         </div>
     </div>
+    
 
 </body>
 </html>
