@@ -18,7 +18,9 @@ module.exports = {
         "softBlack":"#151515",
         "lightBlack":"#202225",
         "darkYellow":"#E9BF39",
-        "gold":"#f1d046"
+        "gold":"#f1d046",
+        "darkGreen":"#19413c",
+        "softBlue":"#5561f5"
       }
     },
   },
