@@ -7,20 +7,27 @@ module.exports = {
       RobotoMono:"Roboto Mono, monospace"
     },
     screens:{
-      xs:"300px",
+      xs:"368px",
       sm:"480px",
       md:"768px",
       lg:"976px",
       xl:"1440px"
     },
+    buttons:{
+      instagram:"linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%)"
+    },
     extend: {
       colors:{
         "softBlack":"#151515",
-        "lightBlack":"#202225",
+        "lightBlack":"#33333",
         "darkYellow":"#E9BF39",
         "gold":"#f1d046",
         "darkGreen":"#19413c",
-        "softBlue":"#5561f5"
+        "softBlue":"#5561f5",
+        "darkPurple":"#780FF7",
+        "lightPink":"#FD01C7",
+        "pinkedRed":"#FA286E",
+        "lightYellow":"#FDA300"
       }
     },
   },
