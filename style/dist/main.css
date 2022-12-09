@@ -612,12 +612,6 @@ video {
   gap: 10px;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -671,9 +665,9 @@ video {
      object-fit: cover;
 }
 
-.px-\[20px\] {
-  padding-left: 20px;
-  padding-right: 20px;
+.px-\[29px\] {
+  padding-left: 29px;
+  padding-right: 29px;
 }
 
 .py-\[9px\] {
@@ -681,29 +675,9 @@ video {
   padding-bottom: 9px;
 }
 
-.px-\[24px\] {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.px-\[25px\] {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.px-\[28px\] {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.px-\[29px\] {
-  padding-left: 29px;
-  padding-right: 29px;
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pr-4 {
@@ -778,6 +752,46 @@ video {
   transition-duration: .30s;
 }
 
+.landingContent h1{
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.landingContent .slogan{
+  animation: slideLeft 1s ease-in-out;
+}
+
+.instagram{
+  animation: slideLeft 1s ease;
+}
+
+.discord{
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideIn{
+  from{
+    transform: translateX(-500px);
+  }
+
+  to{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideLeft{
+  from{
+    transform: translateX(500px);
+  }
+
+  to{
+    transform: translateX(0px);
+  }
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -823,6 +837,11 @@ video {
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.hover\:-translate-y-\[3px\]:hover {
+  --tw-translate-y: -3px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-\[\#707af7\]:hover {
