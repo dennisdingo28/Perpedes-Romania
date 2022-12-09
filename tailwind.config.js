@@ -19,7 +19,6 @@ module.exports = {
     extend: {
       colors:{
         "softBlack":"#151515",
-        "lightBlack":"#33333",
         "darkYellow":"#E9BF39",
         "gold":"#f1d046",
         "darkGreen":"#19413c",
