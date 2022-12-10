@@ -175,14 +175,14 @@
               Assumenda quaerat obcaecati ipsa et.
             </p>
             <button
-              class="bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]"
+              class="founder-wolf bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]"
             >
               contact
             </button>
           </div>
         </div>
 
-        <div class="𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾 flex flex-col items-center max-w-[600px]">
+        <div class="𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾 cofounder flex flex-col items-center max-w-[600px]">
           <div
             class="bg-slate-800 rounded-full -mb-[30px] z-10 flex justify-center items-center"
           >
@@ -315,14 +315,20 @@
                 <i class="bi bi bi-envelope text-[#d0d0d0] text-[20px]"></i>
                 <input type="text" placeholder=" email" class=" w-[100%] outline-none text-[16px] font-RobotoMono pl-1 max-w-[400px] bg-transparent text-[#d0d0d0] border-b" maxlength="40">
               </div>
-              
+              <div class="contactClient w-[100%] flex flex-col items-center">
+                <select id="contactSelector" class="bg-softBlack p-2 outline-none font-medium text-[#d0d0d0]">
+                  <option value="Wolf" selected>Wolf</option>
+                  <option value="Achilles">Achilles</option>
+                  <option value="Joker">Joker</option>
+                </select>
+              </div>
               <div class="description w-[100%] flex flex-col items-center">
                 <i class="bi bi-card-text text-[#d0d0d0] text-[20px]"></i>
                 <textarea rows="10" placeholder="descriere" class="font-RobotoMono w-[100%] px-2 bg-transparent outline-none max-w-[400px] border-x resize-none text-[#d0d0d0]"></textarea>
               </div>
               <div class="flex flex-col items-center justify-center">
                   <button class="bg-[#300075] font-noto rounded-md font-bold text-[#d0d0d0] px-7 py-1 border border-[#300075] hover:scale-105">Submit</button>
-                  <p class="formStatus">Campuri Invalide</p>
+                  <p class="formStatus text-green-700 font-noto mt-2">Mesajul a fost trimis !</p>
               </div>
           </section>
 
@@ -332,6 +338,8 @@
       
     </div>
 
+
+    <script src="../js/contact.js"></script>
 
   </body>
 </html>
