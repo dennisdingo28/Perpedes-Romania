@@ -16,10 +16,10 @@
 
 }
 .tiktok{
-    animation: slideIn 1s ease;
+    animation: slideLeft 1s ease;
 }
 .discord{
-    animation-name: slideLeft;
+    animation-name: slideIn;
     animation-duration: 1s;
     animation-timing-function: ease;
 }
