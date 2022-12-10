@@ -15,11 +15,11 @@
     animation: slideLeft 1s ease-in-out;
 
 }
-.instagram{
-    animation: slideLeft 1s ease;
+.tiktok{
+    animation: slideIn 1s ease;
 }
 .discord{
-    animation-name: slideIn;
+    animation-name: slideLeft;
     animation-duration: 1s;
     animation-timing-function: ease;
 }
@@ -38,4 +38,10 @@
     to{
         transform: translateX(0px);
     }
+}
+body::-webkit-scrollbar{
+    width: 0 !important;
+}
+body{
+    overflow-y: scroll;
 }
