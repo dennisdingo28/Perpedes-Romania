@@ -1250,6 +1250,10 @@ body{
   transform: translateY(-2px) rotate(-135deg);
 }
 
+.menuContent{
+  transition: all 2s ease;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;

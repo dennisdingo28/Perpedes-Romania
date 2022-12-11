@@ -59,3 +59,6 @@ body{
 .line3.open{
     transform: translateY(-2px) rotate(-135deg);
 }
+.menuContent{
+    transition: all 2s ease;
+}

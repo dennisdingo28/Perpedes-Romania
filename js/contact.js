@@ -37,7 +37,7 @@ function filterInput(){
     if(compareInput(username) && compareInput(email) && compareInput(description)){
         validateInputs(username);
     
-        validateInputs(email)
+        validateInputs(email);
 
         validateInputs(description);
         
@@ -128,6 +128,7 @@ function validateInputs(input){
         else{
             input.nextElementSibling.nextElementSibling.classList.remove('hidden');
             input.nextElementSibling.classList.add('hidden');
+            email.value='';
         }
     }else{
         if(input.value.trim()=='')
