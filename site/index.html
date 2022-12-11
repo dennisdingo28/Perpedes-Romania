@@ -325,9 +325,9 @@
               </div>
               <div class="contactClient w-[100%] flex flex-col items-center">
                 <select id="contactSelector" class="bg-softBlack p-2 outline-none font-medium text-[#d0d0d0]">
-                  <option value="Wolf" selected>Wolf</option>
-                  <option value="Achilles">Achilles</option>
-                  <option value="Joker">Joker</option>
+                  <option value="Wolf" class="wolf" selected>Wolf</option>
+                  <option value="Achilles" class="achilles">Achilles</option>
+                  <option value="Joker" class="joker">Joker</option>
                 </select>
               </div>
               <div class="w-[100%] flex flex-col items-center">
@@ -350,6 +350,16 @@
       
     </div>
 
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("4nSC6p98PSTmPUQsE");
+      })();
+    </script>
 
     <script src="../js/contact.js"></script>
 
