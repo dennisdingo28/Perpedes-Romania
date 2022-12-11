@@ -8,7 +8,7 @@ const submitBtn = document.querySelector('.submitBtn');
 const formStatus = document.querySelector('.formStatus');
 
 
-const deniedWords = ["matii","pula","pulaa","pizda","mata","fututi","mortii","raniti","handicapatule","muist","muistilor","mamele","tractorist","handicapt","pizdelor","sugi"]
+const deniedWords = ["matii","pula","idiot","pisat","cacat","imbecil","taran","pulii","familia","pulaa","pizda","mata","fututi","mortii","raniti","handicapatule","muie","muist","muistilor","mamele","tractorist","handicapt","pizdelor","sugi"]
 
 
 founder.addEventListener('click',()=>{
@@ -21,10 +21,7 @@ cofounder.addEventListener('click',()=>{
 
 
 submitBtn.addEventListener('click',()=>{
-    validateInputs(username);
-    validateInputs(email);
-    validateInputs(description);
-
+    
     filterInput();
 
     setTimeout(clearInput,2000);
@@ -33,28 +30,54 @@ submitBtn.addEventListener('click',()=>{
 function filterInput(){
 
     let wrongInput = false;
+    if(compareInput(username) && compareInput(email) && compareInput(description)){
+        validateInputs(username);
+        validateInputs(email);
+        validateInputs(description);
+        if(checkInput(username) && checkInput(email) && checkInput(description)){
+            formStatus.textContent='Mesajul a fost trimis !';
+            formStatus.classList.add('text-green-700');
+            formStatus.classList.remove('text-red-700');
+        }else{
+            formStatus.textContent='Campuri invalide !';
+            formStatus.classList.remove('text-green-700');
+            formStatus.classList.add('text-red-700');
+        }
+    }else{
+        formStatus.classList.add('text-red-700');
+        formStatus.classList.remove('text-green-700');
+        formStatus.textContent='Mesajul tau contine injurii !'
+    }
     
-    compareInput(username);
-   
-
+    function setError(input){
+        input.nextElementSibling.nextElementSibling.classList.remove('hidden');
+        input.nextElementSibling.classList.add('hidden');
+    }
     function compareInput(input){
-        for(let i=0;i<deniedWords.length;i++){
-            const noWhiteSpace = input.value.trim().replaceAll(' ','');
-            console.log(noWhiteSpace);
-            if(noWhiteSpace.includes(JSON.stringify(deniedWords[i])))
-            {
-                console.log(noWhiteSpace);
-                input.nextElementSibling.nextElementSibling.classList.remove('hidden');
-                input.nextElementSibling.classList.add('hidden');
+        const word = [];
 
-                formStatus.classList.remove('hidden');
-                formStatus.classList.add('text-red-700');
-                formStatus.classList.remove('text-green-700');
-                formStatus.classList.textContent='Mesajul nu a fost trimis!';
-                wrongInput=true;
-                return;
+        for(let i=0;i<input.value.trim().length;i++){
+            word.push(input.value.trim()[i].toLowerCase());
+        }
+        let str = "";
+        let deniedWord = false;
+        
+        for(let i=0;i<word.length;i++){
+            if(word[i]!=' ')
+            {
+                str+=word[i];
+                for(let j=0;j<deniedWords.length;j++)
+                {
+                    if(str==deniedWords[j])
+                        return false;
+                }
+            }
+            else 
+            {
+               str="";
             }
         }
+        return true;
     }
 }
 
@@ -63,9 +86,11 @@ function validateInputs(input){
     {
         input.nextElementSibling.nextElementSibling.classList.remove('hidden');
         input.nextElementSibling.classList.add('hidden');
+        return false;
     }else{  
         input.nextElementSibling.classList.remove('hidden');
         input.nextElementSibling.nextElementSibling.classList.add('hidden');
+        return true;
     }
 }
 
