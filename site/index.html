@@ -55,14 +55,15 @@
             >Parteneri</a
           >
         </div>
-        <div class="menu pr-4 flex flex-col gap-1 cursor-pointer md:hidden">
+        <div class="menu open z-10 pr-4 flex flex-col gap-1 cursor-pointer md:hidden">
           <div class="line1 w-[20px] h-[3.3px] bg-white"></div>
           <div class="line2 w-[20px] h-[3.3px] bg-white"></div>
           <div class="line3 w-[20px] h-[3.3px] bg-white"></div>
         </div>
-        <div class="menuContent hidden p-3 fixed text-white w-[60%] bg-black bottom-0 right-0 top-0">
-            <div class="flex h-[100%] justify-between">
-                <div class="links flex flex-col gap-10 text-[20px]">
+        <div class="menuContent hidden rounded-xl p-3 fixed text-white w-[60%] bg-black bottom-0 right-0 top-0 md:hidden">
+            <div class="flex flex-col h-[100%]">
+              <div class="flex h-[100%] justify-between">
+                <div class="links flex flex-col gap-10 text-[16px] sm:text-[20px]">
                   <a
                   href="#"
                   class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
@@ -84,9 +85,14 @@
                   >Parteneri</a
                 >
                 </div>
-                <div class="logoContent self-center">
-                  <img src="../img/betterlogo.png" class="w-[80px] object-cover" alt="">
+                <div class="logoContent self-end mb-12 sm:self-center sm:mb-0">
+                  <a href="index.html"><img src="../img/betterlogo.png" class="w-[80px] object-cover" alt=""></a>
                 </div>
+              </div>
+              <div class="font-RobotoMono text-center">
+                <span class="text-white">Bun venit </span
+                ><span class="text-gold">în comunitate !</span>
+              </div>
             </div>
         </div>
       </div>
@@ -400,6 +406,7 @@
     </script>
 
     <script src="../js/contact.js"></script>
+    <script src="../js/menu.js"></script>
 
   </body>
 </html>

@@ -45,3 +45,17 @@ body::-webkit-scrollbar{
 body{
     overflow-y: scroll;
 }
+
+.line1,.line3,.line2{
+    transition: all .4s;
+}
+
+.line2.open{
+    display: none;
+}
+.line1.open{
+    transform: translateY(5px) rotate(135deg);
+}
+.line3.open{
+    transform: translateY(-2px) rotate(-135deg);
+}
