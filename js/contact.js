@@ -46,7 +46,6 @@ function filterInput(){
         if(checkInput(username) && checkInput(email) && checkInput(description)){
 
             sendMail();
-            preventSpam();
 
             formStatus.textContent='Mesajul a fost trimis !';
             formStatus.classList.add('text-green-700');
