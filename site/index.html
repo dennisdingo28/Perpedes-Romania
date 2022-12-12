@@ -1,404 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/dist/main.css" />
-    <link rel="Shortcut Icon" href="../img/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    
-    <title>PERPEDES ROMANIA</title>
-  </head>
-  <body class="bg-[#0E1111]">
-    <div class="navbar fixed top-0 left-0 right-0 z-20 bg-softBlack">
-      <div class="max-w-[1800px] mx-auto flex items-center justify-between">
-        <div class="logo">
-          <a href="index.html"
-            ><img
-              src="../img/logo.png"
-              class="w-[60px] object-cover md:w-[80px]"
-              alt=""
-          /></a>
-        </div>
-        <div class="font-RobotoMono hidden sm:block lg:text-lg text-md">
-          <span class="text-white">Bun venit </span
-          ><span class="text-gold">în comunitate !</span>
-        </div>
-        <div
-          class="links pr-4 hidden text-white md:flex md:space-x-8 md:items-center lg:space-x-12"
-        >
-          <a
-            href="#"
-            class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-            >Acasă</a
-          >
-          <a
-            href="#about"
-            class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-            >Despre noi</a
-          >
-          <a
-            href="#founders"
-            class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-            >Fondatori</a
-          >
-          <a
-            href="#partners"
-            class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-            >Parteneri</a
-          >
-        </div>
-        <div class="menu open z-10 pr-4 flex flex-col gap-1 cursor-pointer md:hidden">
-          <div class="line1 w-[20px] h-[3.3px] bg-white"></div>
-          <div class="line2 w-[20px] h-[3.3px] bg-white"></div>
-          <div class="line3 w-[20px] h-[3.3px] bg-white"></div>
-        </div>
-        <div class="menuContent hidden rounded-xl p-3 fixed text-white w-[60%] bg-black bottom-0 right-0 top-0 md:hidden">
-            <div class="flex flex-col h-[100%]">
-              <div class="flex h-[100%] justify-between">
-                <div class="links flex flex-col gap-10 text-[16px] sm:text-[20px]">
-                  <a
-                  href="#"
-                  class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-                  >Acasă</a
-                >
-                <a
-                  href="#about"
-                  class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-                  >Despre noi</a
-                >
-                <a
-                  href="#founders"
-                  class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-                  >Fondatori</a
-                >
-                <a
-                  href="#partners"
-                  class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]"
-                  >Parteneri</a
-                >
-                </div>
-                <div class="logoContent self-end mb-12 sm:self-center sm:mb-0">
-                  <a href="index.html"><img src="../img/betterlogo.png" class="w-[80px] object-cover" alt=""></a>
-                </div>
-              </div>
-              <div class="font-RobotoMono text-center">
-                <span class="text-white">Bun venit </span
-                ><span class="text-gold">în comunitate !</span>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/dist/main.css" />
+  <link rel="Shortcut Icon" href="../img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <title>PERPEDES ROMANIA</title>
+</head>
+
+<body class="bg-[#0E1111]">
+  <div class="navbar fixed top-0 left-0 right-0 z-20 bg-softBlack">
+    <div class="max-w-[1800px] mx-auto flex items-center justify-between">
+      <div class="logo">
+        <a href="index.html"><img src="../img/logo.png" class="w-[60px] object-cover md:w-[80px]" alt="" /></a>
+      </div>
+      <div class="font-RobotoMono hidden sm:block lg:text-lg text-md">
+        <span class="text-white">Bun venit </span><span class="text-gold">în comunitate !</span>
+      </div>
+      <div class="links pr-4 hidden text-white md:flex md:space-x-8 md:items-center lg:space-x-12">
+        <a href="#"
+          class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Acasă</a>
+        <a href="#about"
+          class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Despre
+          noi</a>
+        <a href="#founders"
+          class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Fondatori</a>
+        <a href="#partners"
+          class="tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Parteneri</a>
+      </div>
+      <div class="menu open z-10 pr-4 flex flex-col gap-1 cursor-pointer md:hidden">
+        <div class="line1 w-[20px] h-[3.3px] bg-white"></div>
+        <div class="line2 w-[20px] h-[3.3px] bg-white"></div>
+        <div class="line3 w-[20px] h-[3.3px] bg-white"></div>
+      </div>
+      <div class="menuContent hidden rounded-xl p-3 fixed text-white w-[60%] bg-black bottom-0 right-0 top-0 md:hidden">
+        <div class="flex flex-col h-[100%]">
+          <div class="flex h-[100%] justify-between">
+            <div class="links flex flex-col gap-10 text-[16px] sm:text-[20px]">
+              <a href="#"
+                class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Acasă</a>
+              <a href="#about"
+                class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Despre
+                noi</a>
+              <a href="#founders"
+                class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Fondatori</a>
+              <a href="#partners"
+                class="w-fit tracking-wider font-noto relative after:w-0 after:content-[''] after:h-[2px] after:bg-darkYellow after:duration-[210ms] hover:after:w-[100%] after:absolute after:-bottom-[3px] after:left-[50%] after:translate-x-[-50%]">Parteneri</a>
             </div>
+            <div class="logoContent self-end mb-12 sm:self-center sm:mb-0">
+              <a href="index.html"><img src="../img/betterlogo.png" class="w-[80px] object-cover" alt=""></a>
+            </div>
+          </div>
+          <div class="font-RobotoMono text-center">
+            <span class="text-white">Bun venit </span><span class="text-gold">în comunitate !</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="relative">
-      <img
-        src="../img/441788.jpg"
-        class="object-cover w-[100%] h-[72.2vh] max-h-[565px] min-h-[350px] filter brightness-[65%]"
-        alt=""
-      />
-      <div
-        class="absolute max-w-[1800px] mx-auto left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-      >
-        <div class="landingContent">
-          <h1
-            class="font-noto text-[25px] font-bold text-center text-white md:text-[30px]"
-          >
-            PERPEDES ROMANIA ROLEPLAY
-          </h1>
-          <p
-            class="font-noto text-[17px] text-slate-400 italic text-center mb-12 slogan"
-          >
-            "- when quality meets excelence -"
-          </p>
-          <div
-            class="inviteLinks flex items-center flex-col-reverse justify-center gap-3 sm:flex-row sm:space-y-0 sm:space-x-6"
-          >
+  </div>
+  <div class="relative">
+    <img src="../img/441788.jpg"
+      class="object-cover w-[100%] h-[72.2vh] max-h-[565px] min-h-[350px] filter brightness-[65%]" alt="" />
+    <div class="absolute max-w-[1800px] mx-auto left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div class="landingContent">
+        <h1 class="font-noto text-[25px] font-bold text-center text-white md:text-[30px]">
+          PERPEDES ROMANIA ROLEPLAY
+        </h1>
+        <p class="font-noto text-[17px] text-slate-400 italic text-center mb-12 slogan">
+          "- when quality meets excelence -"
+        </p>
+        <div
+          class="inviteLinks flex items-center flex-col-reverse justify-center gap-3 sm:flex-row sm:space-y-0 sm:space-x-6">
           <a target="_blank" href="https://discord.gg/CqEMPnrN">
             <div
-              class="discord flex items-center gap-[10px] font-noto cursor-pointer bg-[#5662f5] px-[15px] py-[7px] md:px-[25px] md:py-[9px] duration-[.30s] rounded-full hover:bg-[#707af7] hover:-translate-y-[3px]"
-            >
+              class="discord flex items-center gap-[10px] font-noto cursor-pointer bg-[#5662f5] px-[15px] py-[7px] md:px-[25px] md:py-[9px] duration-[.30s] rounded-full hover:bg-[#707af7] hover:-translate-y-[3px]">
               <i class="bi bi-discord text-white"></i>
               <p class="text-white lowercase tracking-wide">DISCORD</p>
             </div>
           </a>
           <a target="_blank" href="https://www.tiktok.com/@perpedes0">
             <div
-              class="tiktok flex items-center gap-[10px] font-noto cursor-pointer bg-[#000000] duration-[.30s] px-[15px] py-[7px] md:px-[25px] md:py-[9px] rounded-full hover:bg-gradient-to-t hover:-translate-y-[3px]"
-            >
+              class="tiktok flex items-center gap-[10px] font-noto cursor-pointer bg-[#000000] duration-[.30s] px-[15px] py-[7px] md:px-[25px] md:py-[9px] rounded-full hover:bg-gradient-to-t hover:-translate-y-[3px]">
               <img src="../img/tik-tok.png" class="w-[20px]" alt="">
               <p class="text-white tracking-wide">TikTok</p>
             </div>
           </a>
-          </div>
         </div>
       </div>
     </div>
-    <div class="max-w-[1800px] mx-auto px-5 mt-[50px] mb-[100px]" id="about">
-      <div class="flex items-center justify-center mb-12">
-        <div
-          class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2"
-        >
-          <h2 class="text-[18px] font-noto">
-            Despre <span class="text-darkYellow">Noi</span>
+  </div>
+  <div class="max-w-[1800px] mx-auto px-5 mt-[50px] mb-[100px]" id="about">
+    <div class="flex items-center justify-center mb-12">
+      <div
+        class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2">
+        <h2 class="text-[18px] font-noto">
+          Despre <span class="text-darkYellow">Noi</span>
+        </h2>
+        <i class="bi bi-info-circle text-[18px]"></i>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col justify-center items-center space-y-8 lg:flex-row lg:space-y-0 lg:justify-between lg:space-x-4">
+      <div>
+        <img src="../img/despre.jpg" class="max-h-[300px] min-h-[200px] lg:w-[500px]" alt="" />
+      </div>
+      <div class="text-[#D0D0D0] font-RobotoMono">
+        <h3 class="text-center text-lg mb-6 font-bold">Cum a inceput?</h3>
+        <p class="text-center break-words max-w-[900px] leading-7 lg:text-left">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+          nulla maiores unde omnis hic, ducimus labore ut, vero deserunt
+          nesciunt quasi harum consectetur alias nisi neque minima facilis
+          recusandae! Libero ipsa eius molestias facilis magni aliquid aut eos
+          numquam odio soluta corporis, nemo cupiditate quae, enim facere. Et,
+          vel soluta.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-[1800px] mx-auto px-5 my-[100px]" id="founders">
+    <div class="flex items-center justify-center mb-12">
+      <div
+        class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2">
+        <h2 class="text-[18px] font-noto">Fondatori</h2>
+        <i class="bi bi-people text-[18px] text-darkYellow"></i>
+      </div>
+    </div>
+    <div class="flex flex-col items-center lg:flex-row lg:justify-around gap-20">
+      <div class="wolf flex flex-col items-center max-w-[600px]">
+        <div class="bg-slate-800 rounded-full -mb-[30px] z-10 flex justify-center items-center">
+          <img src="../img/fondator.png" class="w-[100px] h-[100px] object-cover" alt="" />
+        </div>
+        <div class="bg-[#1e1e1e] py-6 px-3 rounded-lg flex flex-col">
+          <h2 class="text-[#d0d0d0] font-noto text-center mt-4 text-[21px]">
+            𝖂𝖔𝖑𝖋93𝖘#8411
           </h2>
-          <i class="bi bi-info-circle text-[18px]"></i>
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col justify-center items-center space-y-8 lg:flex-row lg:space-y-0 lg:justify-between lg:space-x-4"
-      >
-        <div>
-          <img
-            src="../img/despre.jpg"
-            class="max-h-[300px] min-h-[200px] lg:w-[500px]"
-            alt=""
-          />
-        </div>
-        <div class="text-[#D0D0D0] font-RobotoMono">
-          <h3 class="text-center text-lg mb-6 font-bold">Cum a inceput?</h3>
-          <p
-            class="text-center break-words max-w-[900px] leading-7 lg:text-left"
-          >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
-            nulla maiores unde omnis hic, ducimus labore ut, vero deserunt
-            nesciunt quasi harum consectetur alias nisi neque minima facilis
-            recusandae! Libero ipsa eius molestias facilis magni aliquid aut eos
-            numquam odio soluta corporis, nemo cupiditate quae, enim facere. Et,
-            vel soluta.
+          <p class="text-white font-noto mt-3 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+            blanditiis fugiat architecto sapiente, repellendus consequuntur
+            iusto in harum, neque nam velit ducimus assumenda aliquid eveniet.
+            Assumenda quaerat obcaecati ipsa et.
           </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="max-w-[1800px] mx-auto px-5 my-[100px]" id="founders">
-      <div class="flex items-center justify-center mb-12">
-        <div
-          class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2"
-        >
-          <h2 class="text-[18px] font-noto">Fondatori</h2>
-          <i class="bi bi-people text-[18px] text-darkYellow"></i>
-        </div>
-      </div>
-      <div
-        class="flex flex-col items-center lg:flex-row lg:justify-around gap-20"
-      >
-        <div class="wolf flex flex-col items-center max-w-[600px]">
-          <div
-            class="bg-slate-800 rounded-full -mb-[30px] z-10 flex justify-center items-center"
-          >
-            <img
-              src="../img/fondator.png"
-              class="w-[100px] h-[100px] object-cover"
-              alt=""
-            />
-          </div>
-          <div class="bg-[#1e1e1e] py-6 px-3 rounded-lg flex flex-col">
-            <h2 class="text-[#d0d0d0] font-noto text-center mt-4 text-[21px]">
-              𝖂𝖔𝖑𝖋93𝖘#8411
-            </h2>
-            <p class="text-white font-noto mt-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              blanditiis fugiat architecto sapiente, repellendus consequuntur
-              iusto in harum, neque nam velit ducimus assumenda aliquid eveniet.
-              Assumenda quaerat obcaecati ipsa et.
-            </p>
-            <a href="
+          <a href="
             #contact" class="text-center">
             <button
-              class="founder-wolf bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]"
-            >
+              class="founder-wolf bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]">
               contact
             </button>
           </a>
-            
-          </div>
-        </div>
 
-        <div class="𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾 cofounder flex flex-col items-center max-w-[600px]">
-          <div
-            class="bg-slate-800 rounded-full -mb-[30px] z-10 flex justify-center items-center"
-          >
-            <img
-              src="../img/co-fondator.png"
-              class="w-[100px] h-[100px] object-cover"
-              alt=""
-            />
-          </div>
-          <div class="bg-[#1e1e1e] py-6 px-3 rounded-lg flex flex-col">
-            <h2 class="text-[#d0d0d0] font-noto text-center mt-4 text-[21px]">
-              𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾#3442
-            </h2>
-            <p class="text-white font-noto mt-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              blanditiis fugiat architecto sapiente, repellendus consequuntur
-              iusto in harum, neque nam velit ducimus assumenda aliquid eveniet.
-              Assumenda quaerat obcaecati ipsa et.
-            </p>
-            <a href="#contact" class="text-center">
-              <button
-              class="bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]"
-            >
+        </div>
+      </div>
+
+      <div class="𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾 cofounder flex flex-col items-center max-w-[600px]">
+        <div class="bg-slate-800 rounded-full -mb-[30px] z-10 flex justify-center items-center">
+          <img src="../img/co-fondator.png" class="w-[100px] h-[100px] object-cover" alt="" />
+        </div>
+        <div class="bg-[#1e1e1e] py-6 px-3 rounded-lg flex flex-col">
+          <h2 class="text-[#d0d0d0] font-noto text-center mt-4 text-[21px]">
+            𝕬𝕮𝕳𝕴𝕷𝕷𝕰𝕾#3442
+          </h2>
+          <p class="text-white font-noto mt-3 text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+            blanditiis fugiat architecto sapiente, repellendus consequuntur
+            iusto in harum, neque nam velit ducimus assumenda aliquid eveniet.
+            Assumenda quaerat obcaecati ipsa et.
+          </p>
+          <a href="#contact" class="text-center">
+            <button
+              class="bg-[#6184E3] self-center px-6 py-1 text-gray-800 rounded-tl-lg rounded-br-lg border border-[#6184E3] border-solid mt-3 font-semibold hover:rounded-none hover:rounded-tr-lg hover:rounded-bl-lg duration-[.4s]">
               contact
             </button>
-            </a>
-          </div>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="max-w-[1800px] mx-auto px-5 my-[100px]" id="partners">
-      <div class="flex items-center justify-center mb-12">
+  <div class="max-w-[1800px] mx-auto my-[100px]" id="partners">
+    <div class="flex items-center justify-center mb-12">
+      <div
+        class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2">
+        <h2 class="text-[18px] font-noto">Parteneri</h2>
+        <i class="bi bi-people text-[18px] text-darkYellow"></i>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex flex-col items-center justify-center gap-3 md:flex-row">
+
         <div
-          class="flex font-noto tracking-widest text-[#D0D0D0] items-center space-x-2 border-darkGreen border-y-2 py-2"
-        >
-          <h2 class="text-[18px] font-noto">Parteneri</h2>
-          <i class="bi bi-people text-[18px] text-darkYellow"></i>
+          class="card max-w-[350px] h-[290px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500">
+          <img src="../img/joker.jpg" class="w-[80px] h-[80px] rounded-full object-cover" alt="" />
+          <div>
+            <p class="text-slate-400 text-center font-noto font-medium">
+              Joker281#6645
+            </p>
+            <p class="text-blue-500 text-center font-noto tracking-widest">
+              @ Web Developer
+            </p>
+          </div>
+          <p class="text-[#d0d0d0] text-center">
+            “You just have to set your standards. If it were to be easy, would anyone do it?”
+          </p>
         </div>
+
+        <div
+          class="card h-[290px] max-w-[350px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500">
+          <img src="../img/developer.png" class="w-[80px] h-[80px] rounded-full object-cover" alt="" />
+          <div>
+            <p class="text-slate-400 text-center font-noto font-medium">
+              Andrei Lord#6666
+            </p>
+            <p class="text-darkPurple text-center font-noto tracking-widest">
+              @ Developer
+            </p>
+          </div>
+          <p class="text-[#d0d0d0] text-center">
+            If debugging is the process of removing bugs, then programming must be the process of putting them in
+          </p>
+        </div>
+
+        <div
+          class="card h-[290px] max-w-[350px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500">
+          <img src="../img/joker.jpg" class="w-[80px] h-[80px] rounded-full object-cover" alt="" />
+          <div>
+            <p class="text-slate-400 text-center font-noto font-medium">
+              Joker281#6645
+            </p>
+            <p class="text-orange-400 text-center font-noto tracking-widest">
+              @ Music Producer
+            </p>
+          </div>
+          <p class="text-[#d0d0d0] text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            eveniet accusamus cupiditate atque quae quam.
+          </p>
+        </div>
+
       </div>
-
-        <div>
-                <div class="flex flex-col items-center justify-center gap-3 md:flex-row">
-                        
-                    <div
-                        class="card max-w-[350px] h-[290px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500"
-                    >
-                        <img
-                        src="../img/joker.jpg"
-                        class="w-[80px] h-[80px] rounded-full object-cover"
-                        alt=""
-                        />
-                        <div>
-                        <p class="text-slate-400 text-center font-noto font-medium">
-                            Joker281#6645
-                        </p>
-                        <p class="text-blue-500 text-center font-noto tracking-widest">
-                            @ Web Developer
-                        </p>
-                        </div>
-                        <p class="text-[#d0d0d0] text-center">
-                            “You just have to set your standards. If it were to be easy, would anyone do it?”
-                        </p>
-                    </div>
-                    
-                    <div
-                        class="card h-[290px] max-w-[350px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500"
-                    >
-                        <img
-                        src="../img/developer.png"
-                        class="w-[80px] h-[80px] rounded-full object-cover"
-                        alt=""
-                        />
-                        <div>
-                        <p class="text-slate-400 text-center font-noto font-medium">
-                            Andrei Lord#6666
-                        </p>
-                        <p class="text-darkPurple text-center font-noto tracking-widest">
-                            @ Developer
-                        </p>
-                        </div>
-                        <p class="text-[#d0d0d0] text-center">
-                          If debugging is the process of removing bugs, then programming must be the process of putting them in
-                        </p>
-                    </div>
-
-                    <div
-                    class="card h-[290px] max-w-[350px] flex flex-col p-4 items-center bg-[#0b0b0b] gap-6 rounded-md border border-gray-500"
-                >
-                    <img
-                    src="../img/joker.jpg"
-                    class="w-[80px] h-[80px] rounded-full object-cover"
-                    alt=""
-                    />
-                    <div>
-                    <p class="text-slate-400 text-center font-noto font-medium">
-                        Joker281#6645
-                    </p>
-                    <p class="text-orange-400 text-center font-noto tracking-widest">
-                        @ Music Producer
-                    </p>
-                    </div>
-                    <p class="text-[#d0d0d0] text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-                    eveniet accusamus cupiditate atque quae quam.
-                    </p>
-                </div>
-                    
-        </div>
-
-
     </div>
-    
+    </div>
 
     <div class="max-w-[1800px] mx-auto px-5 my-[100px]">
-      
+
       <div class="bg-[#161C1E] rounded-lg max-w-[600px] px-2 mx-auto ">
 
-        <div class="flex flex-col space-y-6 p-4 items-center justify-center md:flex-row md:justify-between md:space-y-0">
+        <div
+          class="flex flex-col space-y-6 p-4 items-center justify-center md:flex-row md:justify-between md:space-y-0">
           <h1 class="text-left text-[#d0d0d0] font-semibold text-[25px]">Contactează-ne</h1>
           <img src="../img/letter-contact-svgrepo-com.svg" class="w-[50px]" alt="">
         </div>
-       
+
         <div class="contact mt-12 md:mt-0" id="contact">
 
-          <section class="flex flex-col items-center space-y-12 mt-16"> 
-              <div class="w-[100%] flex flex-col items-center">
-                <i class="bi bi-person-circle text-[#d0d0d0] text-[20px]"></i>
-                <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
-                  <input type="text" placeholder="nume" class="username w-[100%] outline-none text-[16px] font-RobotoMono pl-1 max-w-[400px] bg-transparent text-[#d0d0d0] border-b" maxlength="40">
-                  <i class="bi bi-check2-circle text-green-700 text-[18px] hidden"></i>
-                  <i class="bi bi-exclamation-circle text-red-700 text-[16px] hidden"></i>
-                </div>
+          <section class="flex flex-col items-center space-y-12 mt-16">
+            <div class="w-[100%] flex flex-col items-center">
+              <i class="bi bi-person-circle text-[#d0d0d0] text-[20px]"></i>
+              <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
+                <input type="text" placeholder="nume"
+                  class="username w-[100%] outline-none text-[16px] font-RobotoMono pl-1 max-w-[400px] bg-transparent text-[#d0d0d0] border-b"
+                  maxlength="40">
+                <i class="bi bi-check2-circle text-green-700 text-[18px] hidden"></i>
+                <i class="bi bi-exclamation-circle text-red-700 text-[16px] hidden"></i>
               </div>
-              <div class="w-[100%] flex flex-col items-center">
-                <i class="bi bi bi-envelope text-[#d0d0d0] text-[20px]"></i>
-                <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
-                  <input type="text" placeholder="email" class="email w-[100%] outline-none text-[16px] font-RobotoMono pl-1 max-w-[400px] bg-transparent text-[#d0d0d0] border-b" maxlength="40">
-                  <i class="bi bi-check2-circle text-green-700 text-[18px] hidden"></i>
-                  <i class="bi bi-exclamation-circle text-red-700 text-[16px] hidden"></i>
-                </div>
+            </div>
+            <div class="w-[100%] flex flex-col items-center">
+              <i class="bi bi bi-envelope text-[#d0d0d0] text-[20px]"></i>
+              <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
+                <input type="text" placeholder="email"
+                  class="email w-[100%] outline-none text-[16px] font-RobotoMono pl-1 max-w-[400px] bg-transparent text-[#d0d0d0] border-b"
+                  maxlength="40">
+                <i class="bi bi-check2-circle text-green-700 text-[18px] hidden"></i>
+                <i class="bi bi-exclamation-circle text-red-700 text-[16px] hidden"></i>
               </div>
-              <div class="contactClient w-[100%] flex flex-col items-center">
-                <select id="contactSelector" class="bg-softBlack p-2 outline-none font-medium text-[#d0d0d0]">
-                  <option value="Wolf" class="wolf" selected>𝖂𝖔𝖑𝖋93𝖘 </option>
-                  <option value="Achilles" class="achilles">Achilles</option>
-                  <option value="Joker" class="joker">Joker</option>
-                </select>
+            </div>
+            <div class="contactClient w-[100%] flex flex-col items-center">
+              <select id="contactSelector" class="bg-softBlack p-2 outline-none font-medium text-[#d0d0d0]">
+                <option value="Wolf" class="wolf" selected>𝖂𝖔𝖑𝖋93𝖘 </option>
+                <option value="Achilles" class="achilles">Achilles</option>
+                <option value="Joker" class="joker">Joker</option>
+              </select>
+            </div>
+            <div class="w-[100%] flex flex-col items-center">
+              <i class="bi bi-card-text text-[#d0d0d0] text-[20px]"></i>
+              <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
+                <textarea rows="10" placeholder="descriere"
+                  class="description font-RobotoMono w-[100%] px-2 bg-transparent outline-none max-w-[400px] border-x resize-none text-[#d0d0d0]"></textarea>
+                <i class="bi bi-check2-circle text-green-700 text-[18px] self-end hidden"></i>
+                <i class="bi bi-exclamation-circle text-red-700 text-[17px] self-end hidden"></i>
               </div>
-              <div class="w-[100%] flex flex-col items-center">
-                <i class="bi bi-card-text text-[#d0d0d0] text-[20px]"></i>
-                <div class="flex items-center gap-2 w-[100%] justify-between sm:justify-center">
-                  <textarea rows="10" placeholder="descriere" class="description font-RobotoMono w-[100%] px-2 bg-transparent outline-none max-w-[400px] border-x resize-none text-[#d0d0d0]"></textarea>
-                  <i class="bi bi-check2-circle text-green-700 text-[18px] self-end hidden"></i>
-                  <i class="bi bi-exclamation-circle text-red-700 text-[17px] self-end hidden"></i>
-                </div>  
-              </div>
-              <div class="flex flex-col items-center justify-center pb-4">
-                  <button class="bg-[#300075] submitBtn font-noto rounded-md font-bold text-[#d0d0d0] duration-[.2s] px-7 py-1 border border-[#300075] hover:scale-105">Trimite</button>
-                  <p class="formStatus font-noto mt-2"></p>
-              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center pb-4">
+              <button
+                class="bg-[#300075] submitBtn font-noto rounded-md font-bold text-[#d0d0d0] duration-[.2s] px-7 py-1 border border-[#300075] hover:scale-105">Trimite</button>
+              <p class="formStatus font-noto mt-2"></p>
+            </div>
           </section>
 
 
         </div>
       </div>
-      
+
+    </div>  
+
+
+    <div class="bg-[#151515] p-3">
+      <div class="max-w-[1800px] mx-auto">
+        <div class="flex justify-between">
+          <div class="flex pl-3 items-center gap-4">
+            <div class="instagramLink text-white bg-darkGreen rounded-full px-2 py-1 text-[20px] md:text-[25px] cursor-pointer duration-[0.10s] hover:text-[#d0d0d0]">
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="facebookLink text-white text-[20px] md:text-[25px] bg-darkGreen rounded-full px-2 py-1 cursor-pointer duration-[0.10s] hover:text-[#d0d0d0]">
+              <a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="youtubeLink text-white text-[20px] md:text-[25px] bg-darkGreen rounded-full px-2 py-1 cursor-pointer duration-[0.10s] hover:text-[#d0d0d0]">
+              <a target="_blank" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="tiktokLink text-white text-[20px] md:text-[25px] bg-darkGreen rounded-full px-2 py-1 cursor-pointer duration-[0.10s] hover:text-[#d0d0d0]">
+              <a target="_blank" href="https://www.tiktok.com/@perpedes0"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="">
+            <a href="index.html"><img src="../img/logo.png" class="w-[60px] object-cover md:w-[80px] object-center cursor-pointer" alt=""></a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
 
     <script type="text/javascript">
-      (function(){
+      (function () {
         emailjs.init("4nSC6p98PSTmPUQsE");
       })();
     </script>
@@ -406,5 +354,6 @@
     <script src="../js/contact.js"></script>
     <script src="../js/menu.js"></script>
 
-  </body>
+</body>
+
 </html>
