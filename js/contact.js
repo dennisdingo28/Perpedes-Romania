@@ -10,8 +10,10 @@ const wolf = document.querySelector('.wolf');
 const achilles = document.querySelector('.achilles');
 const joker = document.querySelector('.joker');
 const option = document.getElementsByTagName('option');
-console.log(option[0].value);
+const blocker = document.querySelector('.blocker');
+
 const deniedWords = ["matii","pula","retardat","idiot","pisat","cacat","imbecil","taran","familia","pizda","mata","fututi","mortii","raniti","handicapatule","muie","muist","muistilor","mamele","tractorist","handicapat","pizdelor","sugi","pul","piz","sug","mui","fut","retarda","ma-ta"];
+
 
 founder.addEventListener('click',()=>{
     contactSelector.value = 'Wolf';
@@ -43,12 +45,13 @@ function filterInput(){
         
         if(checkInput(username) && checkInput(email) && checkInput(description)){
 
-           sendMail();
-            
+            sendMail();
+            preventSpam();
 
             formStatus.textContent='Mesajul a fost trimis !';
             formStatus.classList.add('text-green-700');
             formStatus.classList.remove('text-red-700');
+            
         }else{
             formStatus.textContent='Campuri invalide !';
             formStatus.classList.remove('text-green-700');
