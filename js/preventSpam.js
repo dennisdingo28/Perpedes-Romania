@@ -24,7 +24,7 @@ function checkExpire() {
 
             const dayDiff = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-            if (dayDiff>= 1) {
+            if (dayDiff>= 30) {
                 blocker.classList.add('hidden');
                 clearInterval(checker);
                 localStorage.removeItem('cooldown');
